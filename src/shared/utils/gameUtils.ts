@@ -1,5 +1,7 @@
 import {useContext} from "react";
-import { GameContext, type GameContextType } from '../../contexts/gameContext.tsx';
+import { GameContext } from '../../contexts/gameContext.tsx';
+import { type GameContextType} from "../types/game.interface.ts";
+
 export const useGameContext = (): GameContextType => {
     const context = useContext(GameContext);
     if (!context) {

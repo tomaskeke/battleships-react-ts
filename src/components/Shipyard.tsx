@@ -27,12 +27,10 @@ const Ship: React.FC<ShipProps> = ({ name, size , used}) => {
                 setCurrentlySelected(shipData);
             }
         }
-
-
     };
 
     const hull = Array.from({ length: size }, (_, index) => (
-        <div key={index} className={`${name} square ${used ? 'placed' : ''}${currentlySelected.name == name ? 'selected' : ''}`} data-size={size} data-index={index} />
+        <div key={index} className={`${name} square ${used ? 'placed' : ''}${currentlySelected.name == name ? 'selected' : ''}`} data-size={size} data-ship={name} data-index={index}></div>
     ));
 
     return (

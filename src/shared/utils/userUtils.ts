@@ -1,7 +1,8 @@
 import { useContext } from 'react';
-import { UserContext, UserContextProps } from '../../contexts/userContext';
+import { UserContext} from '../../contexts/userContext';
+import { type UserContextType } from "../types/user.interface.ts";
 
-export const useUserContext = (): UserContextProps => {
+export const useUserContext = (): UserContextType => {
     const context = useContext(UserContext);
 
     if (!context) {
