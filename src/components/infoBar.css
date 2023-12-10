@@ -1,0 +1,62 @@
+.infoBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2979FF;
+    border-radius: 4px 4px 0 0;
+    height: 60px;
+    width: 100%;
+    color: white;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.infoBar h2 {
+    color: #cccccc;
+
+    font-weight: 500;
+}
+.playerInfo {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+}
+.playerInfo:last-of-type {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+.playerTurnInfo h2 {
+    color: #FFF;
+    font-weight: 700;
+}
+.score-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding: .5rem;
+    min-width: 50px;
+    border: 1px solid #ccc;
+    margin: 0 2rem;
+}
+.score-container:last-of-type {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+.score-container:after {
+    content: 'Score';
+    position: absolute;
+    top: -.7rem;
+    background-color: #2979FF;
+    left: calc(50% - 22.5px);
+    font-size: .8rem;
+    height: 1rem;
+    width: 45px;
+}
+
+.sunken-ship{
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #121212;
+}

@@ -1,0 +1,9 @@
+.selected {
+    background-color: #2979FF;
+    border: 1px solid #2979FF;
+}
+
+.placed {
+    background-color: #303030;
+    border: 1px solid #303030;
+}
